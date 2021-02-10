@@ -138,6 +138,16 @@ const Body = styled.div`
   }
 `;
 
+const FlexRow = styled.div`
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+
+  & > *:first-child {
+    margin-right: 10px
+  }
+`;
+
 export default {
   Wrapper,
   Options,
@@ -149,4 +159,5 @@ export default {
   Cell,
   Body,
   Column,
+  FlexRow
 };

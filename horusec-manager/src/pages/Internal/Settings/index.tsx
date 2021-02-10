@@ -62,7 +62,17 @@ const Settings: React.FC = () => {
   return (
     <Styled.Wrapper>
       <Styled.Content>
-        <Styled.Title>{t('SETTINGS_SCREEN.TITLE')}</Styled.Title>
+
+        <Styled.FlexRow>
+          <Button
+            text={t("GENERAL.BACK")}
+            width={70}
+            height={30}
+            icon="page-previous"
+            onClick={() => history.push("/")}
+          />
+          <Styled.Title>{t('SETTINGS_SCREEN.TITLE')}</Styled.Title>
+        </Styled.FlexRow>
 
         <Styled.Table>
           <Styled.Head>

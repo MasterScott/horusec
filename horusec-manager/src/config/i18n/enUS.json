@@ -236,6 +236,7 @@
   "GENERAL": {
     "SELECT": "Select",
     "CANCEL": "Cancel",
+    "BACK": "Back",
     "PAGINATION": {
       "ITENS_PAGE": "Items per page:",
       "OF": "of",

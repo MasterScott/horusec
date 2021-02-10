@@ -31,6 +31,7 @@ import { authTypes } from 'helpers/enums/authTypes';
 import HandleWorkspace from './Handle';
 import Tokens from './Tokens';
 import Users from './Users';
+import { useHistory } from 'react-router-dom';
 
 const Workspaces: React.FC = () => {
   const { t } = useTranslation();
@@ -52,6 +53,8 @@ const Workspaces: React.FC = () => {
   const [filteredWorkspaces, setFilteredWorkspaces] = useState<Workspace[]>(
     allWorkspaces
   );
+
+  const history = useHistory();
 
   const onSearch = (search: string) => {
     if (search) {
@@ -109,7 +112,16 @@ const Workspaces: React.FC = () => {
       </Styled.Options>
 
       <Styled.Content>
+      <Styled.FlexRow>
+          <Button
+            text={t("GENERAL.BACK")}
+            width={70}
+            height={30}
+            icon="page-previous"
+            onClick={() => history.push("/")}
+          />
         <Styled.Title>{t('WORKSPACES_SCREEN.TITLE')}</Styled.Title>
+        </Styled.FlexRow>
 
         <Styled.Table>
           <Styled.Head>

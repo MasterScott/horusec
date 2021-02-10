@@ -51,6 +51,7 @@ const Logo = styled.img`
   margin: 24px 17px;
   width: 100px;
   height: 22px;
+  cursor: pointer;
 `;
 
 const RoutesList = styled.ul`

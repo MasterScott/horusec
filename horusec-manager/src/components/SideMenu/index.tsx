@@ -157,7 +157,7 @@ const SideMenu: React.FC = () => {
     <>
       <Styled.SideMenu>
         <Styled.WrapperLogoRoutes>
-          <Styled.Logo src={HorusecLogo} alt="Horusec Logo" />
+          <Styled.Logo src={HorusecLogo} alt="Horusec Logo" onClick={() => history.push("/")}/>
 
           {allWorkspaces && allWorkspaces.length > 0 ? (
             <Styled.SelectWrapper>
